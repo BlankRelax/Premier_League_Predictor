@@ -15,4 +15,10 @@ passing_attributes = ['Key','Team','League','Season','Rank','Possession','PassSu
                   'LongKeyPassesPerGame','ShortKeyPassesPerGame']
 
 
-print(df[passing_attributes])
+df = df[all_key_attributes]
+TSPGGT = 0
+for i in range(0,len(df)):
+    if df['TotalShotsPerGame'][i]>20:
+        #print(df['TotalShotsPerGame'][i])
+        TSPGGT+=1
+print(TSPGGT)
