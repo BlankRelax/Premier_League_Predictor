@@ -10,12 +10,7 @@ filepath.parent.mkdir(parents=True, exist_ok=True)
 df.to_csv(filepath)
 
 
-# TSPGGT = 0
-# print(df.head())
-# print(len(df))
 
-# for i in range(0,len(df)):
-#     if df['TotalShotsPerGame'][i]>20:
-#         #print(df['TotalShotsPerGame'][i])
-#         TSPGGT+=1
-# print(TSPGGT)
+
+
+
